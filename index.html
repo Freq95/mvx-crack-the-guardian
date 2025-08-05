@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wallet Challenge – Simulare Educațională</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>🔐 Wallet Challenge – Simulare Educațională</h1>
+        <div class="card">
+            <p><strong>Adresa Publică:</strong> erd1qqqqqqqqqqqqqpgq4q5tz5gycc2y88v9ee5x9gnx7nqft9nqkq3s9jpwrt</p>
+            <p><strong>Cheia Privată:</strong> abc123fakeseedxyz987654321</p>
+            <p><strong>Suma în Wallet:</strong> 4.28 EGLD</p>
+            <p class="note">Acesta este un wallet protejat cu mecanisme de securitate on-chain.<br>
+            Încearcă să introduci cheia privată corectă pentru a accesa fondurile.</p>
+        </div>
+
+        <div class="form">
+            <input type="text" id="keyInput" placeholder="Introdu cheia privată aici" />
+            <button onclick="tryHack()">Încearcă să spargi wallet-ul</button>
+            <p id="result"></p>
+        </div>
+
+        <div class="counter">
+            🔁 Număr de încercări până acum: <span id="attempts">0</span>
+        </div>
+
+        <div class="disclaimer">
+            ⚠️ NU introduce niciodată o frază seed reală!<br>
+            Această aplicație este doar o simulare pentru învățare și testare.
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
